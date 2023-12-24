@@ -1,0 +1,34 @@
+package question1;
+
+import java.io.Serializable;
+public class employeee implements Serializable {
+
+
+
+
+
+
+	
+	private static final long serialVersionUID = 2L;
+	//Declaring the needed variables
+	String empId;
+	String empName;
+	String empPhone;
+	String empAddress;
+	int salary;
+
+	public employeee(String empId, String empName, String empPhone, String empAddress, int salary) {
+		this.empId = empId;
+		this.empName = empName;
+		this.empPhone = empPhone;
+		this.empAddress = empAddress;
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empPhone=" + empPhone + ", empAddress="
+				+ empAddress + ", salary=" + salary + "]";
+	}
+	
+}
